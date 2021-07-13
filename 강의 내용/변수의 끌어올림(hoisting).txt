@@ -1,0 +1,16 @@
+변수의 끌어올림(hosting)
+window
+var a = 1;
+1)변수의 선언 var a;
+2)변수의 값을 대입 var a = 1
+
+변수의 선언 - window 객체에 먼저 추가
+window.a = undefined;
+var a = 1;
+
+console.log(a);
+var a = 1;
+
+window.a = undefined;
+console.log(a); // undefined
+var a = 1;
