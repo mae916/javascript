@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      window.onload=function(){
+        const memNm = document.getElementById("memNm");
+        //data-속성명 -- 요소.dataset
+        const dataset = memNm.dataset;
+        console.log("price",dataset.price);
+        console.log("num",dataset.num);
+
+        dataset.consumer = 20000;  //자동으로 html에 속성으로 추가됨.
+
+        //data-price 삭제
+        delete dataset.price;
+      };
+    </script>
+  </head>
+  <body>
+    <input type="text" name="memNm" id="memNm" data-price="10000" data-num="10">
+  </body>
+</html>
