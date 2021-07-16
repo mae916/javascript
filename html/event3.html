@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        window.onload = function() {
+            const box1 = document.getElementById("box1");
+            box1.addEventListener("click",function(event){
+                event.stopPropagation(); //이벤트 전파 방지
+                alert("box1");
+            }, true);
+            const box2 = document.getElementById("box2");
+            box2.addEventListener("click",function(event){
+                alert("box2");
+            }, true);
+            const box3 = document.getElementById("box3");
+            box3.addEventListener("click",function(event){
+                alert("box3");
+            }, true);
+
+            //기본값 false, true로 바꾸면 반대로 실행됨
+        };
+    </script>
+    <style>
+        .box {
+            padding: 50px;
+        }
+        #box1 {
+            border: 1px solid red;
+        }
+        #box2 {
+            border: 1px solid blue;
+        }
+        #box3 {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">box1
+        <div class="box" id="box2">box2
+            <div class="box" id="box3">box3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

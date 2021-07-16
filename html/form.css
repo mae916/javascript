@@ -1,0 +1,21 @@
+.add,
+.delete {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: gray;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.add {
+  margin-bottom: 1px;
+}
+table {
+  border-spacing: 0;
+  /* 테이블의 보더 사이의 간격을 없애줌 */
+  padding: 0;
+}
+
+table th,
+table td {
+  padding: 7px 10px;
+}
