@@ -92,4 +92,11 @@
                 -취소를 하려면 setlnterval로 설정된 함수 실행 부분의 주소를 알아야한다.
                 -변수에 대입을 해줘야 한다.
 
-                ++++++++++++++++++++++++++++++++++
+                const interval = setInterval(function() {
+						const date = new Date();
+						console.log(date);
+					}, 1000);
+
+					setTimeout(function() {
+						clearInterval(interval);
+					}, 5000);
