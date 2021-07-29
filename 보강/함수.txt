@@ -89,7 +89,7 @@ function sum(x) {
 	함수내부에는 arguments 변수
 		-> 인수로 넘어온 모든 값이 배열 형태로 담겨있다
 		
-	...인수 ->가변인수
+	...인수 -> 가변인수
 	
 	예)
 	function glue(separator, ...data) {
